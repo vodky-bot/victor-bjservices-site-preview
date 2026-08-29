@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Piste A — L'Atelier</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --papier:#F1EEE6;
+    --encre:#18160F;
+    --accent:#D6431B;
+    --ligne:#18160F;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:var(--papier);
+    color:var(--encre);
+    font-family:'Space Mono', monospace;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1320px;margin:0 auto;padding:0 40px;}
+  header{
+    border-bottom:2px solid var(--ligne);
+    padding:22px 0;
+  }
+  .nav{display:flex;justify-content:space-between;align-items:center;}
+  .logo{display:flex;align-items:center;gap:14px;}
+  .logo-mark{
+    width:44px;height:44px;border:2px solid var(--ligne);
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Archivo Black',sans-serif;font-size:15px;
+  }
+  .logo-text{font-family:'Archivo Black',sans-serif;font-size:16px;letter-spacing:0.02em;}
+  .logo-sub{font-size:10px;letter-spacing:0.14em;opacity:0.6;margin-top:2px;}
+  nav ul{list-style:none;display:flex;gap:28px;font-size:12px;letter-spacing:0.08em;}
+  nav a{color:var(--encre);text-decoration:none;}
+  nav a:hover{color:var(--accent);}
+
+  .identite{
+    display:grid;
+    grid-template-columns:1.6fr 1fr;
+    border-bottom:2px solid var(--ligne);
+  }
+  .identite-titre{
+    padding:64px 40px 56px 0;
+    border-right:2px solid var(--ligne);
+  }
+  .eyebrow{font-size:12px;letter-spacing:0.16em;color:var(--accent);margin-bottom:22px;text-transform:uppercase;}
+  h1{
+    font-family:'Archivo Black',sans-serif;
+    font-size:88px;
+    line-height:0.94;
+    letter-spacing:-0.01em;
+    text-transform:uppercase;
+  }
+  h1 span{color:var(--accent);}
+  .lead{
+    max-width:520px;
+    margin-top:28px;
+    font-size:15px;
+    line-height:1.7;
+  }
+  .fiche{
+    padding:64px 0 56px 40px;
+    font-size:13px;
+    line-height:2;
+  }
+  .fiche dt{opacity:0.55;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;margin-top:18px;}
+  .fiche dt:first-child{margin-top:0;}
+  .fiche dd{font-weight:700;}
+  .cta-row{margin-top:32px;display:flex;gap:0;}
+  .cta{
+    display:inline-block;
+    padding:14px 22px;
+    border:2px solid var(--ligne);
+    font-family:'Space Mono',monospace;
+    font-weight:700;
+    font-size:12px;
+    letter-spacing:0.06em;
+    text-decoration:none;
+    color:var(--encre);
+    text-transform:uppercase;
+  }
+  .cta.primary{background:var(--encre);color:var(--papier);}
+
+  .registre{border-bottom:2px solid var(--ligne);}
+  .registre-head{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding:20px 0;border-bottom:2px solid var(--ligne);
+    font-size:11px;letter-spacing:0.12em;text-transform:uppercase;opacity:0.6;
+  }
+  .ligne-metier{
+    display:grid;
+    grid-template-columns:60px 1fr 2fr 160px;
+    align-items:baseline;
+    padding:22px 0;
+    border-bottom:1px solid rgba(24,22,15,0.25);
+    gap:24px;
+  }
+  .ligne-metier:last-child{border-bottom:none;}
+  .num{font-size:12px;opacity:0.5;}
+  .nom{font-family:'Archivo Black',sans-serif;font-size:22px;text-transform:uppercase;}
+  .desc{font-size:13px;line-height:1.6;opacity:0.85;}
+  .tag{font-size:10px;letter-spacing:0.08em;text-transform:uppercase;text-align:right;opacity:0.55;}
+
+  .preuve{
+    display:grid;grid-template-columns:1fr 1.4fr;
+    border-bottom:2px solid var(--ligne);
+  }
+  .preuve img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.25);display:block;border-right:2px solid var(--ligne);}
+  .preuve-texte{padding:40px;display:flex;flex-direction:column;justify-content:center;}
+  .etiquette{font-size:10px;letter-spacing:0.1em;text-transform:uppercase;opacity:0.5;margin-bottom:10px;}
+  .preuve-texte p{font-size:15px;line-height:1.7;max-width:440px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <div class="logo-mark">BJ</div>
+        <div>
+          <div class="logo-text">BJ SERVICES</div>
+          <div class="logo-sub">CHAUFFAGE · SANITAIRE · RAMONAGE</div>
+        </div>
+      </div>
+      <nav><ul>
+        <li><a href="#">Chauffage</a></li>
+        <li><a href="#">Sanitaire</a></li>
+        <li><a href="#">Entretien</a></li>
+        <li><a href="#">Ramonage</a></li>
+        <li><a href="#">Financement</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul></nav>
+    </div>
+  </header>
+
+  <section class="identite">
+    <div class="identite-titre">
+      <div class="eyebrow">Artisan — Vallée de Chevreuse</div>
+      <h1>Chauffagiste<br>&amp; <span>plombier</span><br>à Bonnelles</h1>
+      <p class="lead">Un seul artisan pour cinq métiers du chauffage et du sanitaire. Sur les routes de la vallée de Chevreuse depuis 2005 — installation, dépannage, entretien réglementaire, ramonage, montage des aides.</p>
+      <div class="cta-row">
+        <a class="cta primary" href="#">Nous contacter</a>
+      </div>
+    </div>
+    <dl class="fiche">
+      <dt>Depuis</dt><dd>2005</dd>
+      <dt>Zone</dt><dd>Vallée de Chevreuse</dd>
+      <dt>Adresse</dt><dd>69 rue de la Division Leclerc<br>78830 Bonnelles</dd>
+      <dt>Téléphone</dt><dd>01 30 41 37 09</dd>
+      <dt>Certifications</dt><dd>RGE · QUALIBAT<br>Éco-artisan</dd>
+    </dl>
+  </section>
+
+  <section class="registre">
+    <div class="registre-head"><span>Registre des métiers</span><span>05 postes</span></div>
+    <div class="ligne-metier">
+      <div class="num">01</div>
+      <div class="nom">Chauffage</div>
+      <div class="desc">Installation, remplacement et dépannage — chaudières, pompes à chaleur, radiateurs, planchers chauffants.</div>
+      <div class="tag">Chaudières · PAC</div>
+    </div>
+    <div class="ligne-metier">
+      <div class="num">02</div>
+      <div class="nom">Sanitaire</div>
+      <div class="desc">Plomberie, salle de bain clé en main, recherche de fuite, adoucisseurs, VMC.</div>
+      <div class="tag">Plomberie · SDB</div>
+    </div>
+    <div class="ligne-metier">
+      <div class="num">03</div>
+      <div class="nom">Entretien</div>
+      <div class="desc">Contrat annuel, contrôle de combustion, réglages — l'entretien réglementaire de votre chaudière.</div>
+      <div class="tag">Obligatoire · RSD 1978</div>
+    </div>
+    <div class="ligne-metier">
+      <div class="num">04</div>
+      <div class="nom">Ramonage</div>
+      <div class="desc">Ramonage des conduits, attestation remise en main propre — la prévention qui engage votre assurance.</div>
+      <div class="tag">RSD art. 31.6</div>
+    </div>
+    <div class="ligne-metier">
+      <div class="num">05</div>
+      <div class="nom">Financement</div>
+      <div class="desc">MaPrimeRénov', éco-PTZ, CEE — montage des aides pour vos travaux de rénovation énergétique.</div>
+      <div class="tag">RGE · éco-PTZ</div>
+    </div>
+  </section>
+
+  <section class="preuve">
+    <img src="images/van.jpg" alt="Camion BJ Services">
+    <div class="preuve-texte">
+      <div class="etiquette">Pièce jointe — 01</div>
+      <p>Le camion BJ Services, sur les routes de la vallée de Chevreuse. Pas de photo de banque — ce que vous voyez, c'est ce qui se gare devant chez vous.</p>
+    </div>
+  </section>
+</div>
+</body>
+</html>
